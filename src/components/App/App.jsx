@@ -89,6 +89,7 @@ export class App extends Component {
         </AppWrapper>
       );
     }
+
     if (status === 'resolved') {
       return (
         <AppWrapper>
@@ -98,6 +99,7 @@ export class App extends Component {
         </AppWrapper>
       );
     }
+
     if (status === 'rejected') {
       return (
         <AppWrapper>
@@ -106,6 +108,7 @@ export class App extends Component {
         </AppWrapper>
       );
     }
+
     return (
       <AppWrapper>
         <Searchbar onSubmit={this.onSubmit} />
