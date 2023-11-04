@@ -3,7 +3,7 @@ import axios from 'axios';
 axios.defaults.baseURL = `https://pixabay.com`;
 
 export async function getImages(value, currentPage, signal) {
-  const response = await axios.get('/api', {
+  const response = await axios.get('/api/', {
     signal,
     params: {
       q: value,
